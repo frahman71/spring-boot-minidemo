@@ -107,7 +107,7 @@
   </dependencies>
 
 <!--
-Only needed if you intend
+Only needed if you intend to use a local database instead of the InMem variant
 <build>
     <plugins>
       <plugin>
