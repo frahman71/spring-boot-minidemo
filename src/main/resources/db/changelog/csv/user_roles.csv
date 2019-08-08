@@ -1,0 +1,4 @@
+ROLE_NAME;ROLE_DESCRIPTION
+'ADMIN';'Administrator with full system rights'
+'ORDINARY_USER';'User with restricted rights'
+'ACCOUNTANT';'Accountant that is responsible for adding and removing user accounts'
