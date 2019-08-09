@@ -2,11 +2,7 @@
   <persistence-unit name="hsqldbtest" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-    <class>se.webstep.springbootdemo.entities.SystemPriviledge</class>
-    <class>se.webstep.springbootdemo.entities.UserRole</class>
-    <class>se.webstep.springbootdemo.entities.UserAccount</class>
-    <class>se.webstep.springbootdemo.entities.Customer</class>
-    <class>se.webstep.springbootdemo.entities.Item</class>
+     <class>se.webstep.springbootdemo.entities.Customer</class>
 
     <properties>
       <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
