@@ -18,12 +18,15 @@ public class AppConfig {
         return new CustomerService();
     }
 
+    
     //Register DAO-components here
     @Bean
     CustomerDAO customerDAO() {
         return new CustomerDAOImpl();
     }
 
+
+    //Register REST-services here
     @Bean
     CustomerRestServiceWithEmptyMethods customerRestServiceWithEmptyMethods() {
         return new CustomerRestServiceWithEmptyMethods();
