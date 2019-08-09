@@ -1,6 +1,7 @@
 package se.webstep.springbootdemo.restservices;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +26,7 @@ public class CustomerRestServiceWithEmptyMethods {
         return ResponseEntity.ok().body("Running HTTP PUT for updating one Customer");
     }
 
-    @PutMapping("/deleteCustomer")
+    @DeleteMapping("/deleteCustomer")
     public ResponseEntity deleteCustomer(){
         return ResponseEntity.ok().body("Running HTTP DELETE for deleting one Customer");
     }
