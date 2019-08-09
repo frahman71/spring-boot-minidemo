@@ -11,7 +11,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import config.AppConfig;
@@ -19,9 +18,8 @@ import se.webstep.springbootdemo.entities.Customer;
 import se.webstep.springbootdemo.services.CustomerService;
 
 
-@Profile("test")
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {AppConfig.class, se.webstep.demoapplication.configuration.configuration.TestPersistanceJPAConfiguration.class})
+@SpringBootTest(classes = {AppConfig.class, se.webstep.demoapplication.configuration.TestPersistanceJPAConfiguration.class})
 public class CustomerServiceTest {
 
     @Autowired
