@@ -40,7 +40,7 @@ public class CustomerRestServiceWithCompleteImplementation {
     }
 
     @PostMapping("/addCustomer")
-    public ResponseEntity postCustomer(@RequestBody Customer customer) {
+    public ResponseEntity addCustomer(@RequestBody Customer customer) {
         List<ValidationError> allValidationErrors = new ArrayList<>();
 
         boolean customerIsValid = CustomerValidator.validateCustomer(customer, allValidationErrors);
